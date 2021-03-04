@@ -1,0 +1,27 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+     <header>
+          <div><img class="logoimg" src="{% static 'main/img/head_logo-rhodes.jpg' %}" alt="альтернативный текст"></div>
+          <nav>
+              <div class="topnav" id="myTopnav">
+                  <a href="#">ABOUT</a>
+                  <a href="#">SERVICES</a>
+                  <a href="#">PHOTOS</a>
+                  <a href="#">CONTACT</a>
+                  <a href="#" id="menu" class="icon">&#9776;</a>
+              </div>
+          </nav>
+     </header>
+     <script src="script.js"></script>
+</body>
+</html>
